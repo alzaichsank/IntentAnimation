@@ -7,7 +7,7 @@ import android.content.Context
  * Created by alzaichsank on 2019-06-23.
  */
 
-class AcTrans private constructor(private var builder: Builder) {
+class AnimIntent private constructor(private var builder: Builder) {
 
     class Builder(private var context: Context) {
 
