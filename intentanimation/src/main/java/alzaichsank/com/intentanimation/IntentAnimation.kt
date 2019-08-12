@@ -36,6 +36,10 @@ class AnimIntent private constructor(private var builder: Builder) {
         fun performFade() {
             activity.overridePendingTransition(R.anim.fade_start, R.anim.fade_end)
         }
+
+        fun performExplode(){
+            activity.overridePendingTransition(R.anim.explode, R.anim.explode)
+        }
     }
 
 }
