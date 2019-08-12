@@ -6,6 +6,7 @@
   tools:context=".MenuActivity">
 
   <TextView
+    android:id="@+id/text_view_result"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
     android:gravity="center"
