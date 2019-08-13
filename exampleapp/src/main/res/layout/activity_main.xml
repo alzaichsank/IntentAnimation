@@ -4,7 +4,7 @@
   android:layout_height="wrap_content"
   android:layout_marginBottom="40dp">
 
-  <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+  <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -94,5 +94,5 @@
 
 
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  </android.support.constraint.ConstraintLayout>
 </ScrollView>
