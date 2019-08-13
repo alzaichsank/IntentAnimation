@@ -37,8 +37,8 @@ class AnimIntent private constructor(private var builder: Builder) {
             activity.overridePendingTransition(R.anim.fade_start, R.anim.fade_end)
         }
 
-        fun performExplode(){
-            activity.overridePendingTransition(R.anim.explode, R.anim.explode)
+        fun performHyperSpace(){
+            activity.overridePendingTransition(R.anim.hyperspace_jump, R.anim.hyperspace_jump)
         }
     }
 

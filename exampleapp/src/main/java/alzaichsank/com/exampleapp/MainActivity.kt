@@ -1,6 +1,6 @@
 package alzaichsank.com.exampleapp
 
-import alzaichsank.com.exampleapp.MenuActivity.Companion.explode
+import alzaichsank.com.exampleapp.MenuActivity.Companion.HyperSpace
 import alzaichsank.com.exampleapp.MenuActivity.Companion.fade
 import alzaichsank.com.exampleapp.MenuActivity.Companion.normal
 import alzaichsank.com.exampleapp.MenuActivity.Companion.slide1
@@ -9,17 +9,15 @@ import alzaichsank.com.exampleapp.MenuActivity.Companion.slide3
 import alzaichsank.com.exampleapp.MenuActivity.Companion.slide4
 import alzaichsank.com.intentanimation.AnimIntent
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         intentAction()
-
     }
 
     private fun intentAction() {
@@ -56,10 +54,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_main_explode.setOnClickListener {
-            go.putExtra(MenuActivity.TYPE_INTENT, explode)
+            go.putExtra(MenuActivity.TYPE_INTENT, HyperSpace)
             this.startActivity(go)
-            AnimIntent.Builder(this).performExplode()
+            AnimIntent.Builder(this).performHyperSpace()
         }
-
     }
 }

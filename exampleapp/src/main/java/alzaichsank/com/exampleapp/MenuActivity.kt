@@ -9,12 +9,12 @@ class MenuActivity : AppCompatActivity() {
     companion object {
         const val TYPE_INTENT = "type.intent"
         const val normal = "normal"
-        const val slide1 = "slide1"
-        const val slide2 = "slide2"
-        const val slide3 = "slide3"
-        const val slide4 = "slide4"
+        const val slide1 = "slide to left"
+        const val slide2 = "slide to righ"
+        const val slide3 = "slide to top"
+        const val slide4 = "slide to bottom"
         const val fade = "fade"
-        const val explode = "explode"
+        const val HyperSpace = "hyper space jump"
     }
 
     private var intentString = ""
@@ -47,8 +47,8 @@ class MenuActivity : AppCompatActivity() {
             fade -> {
                 AnimIntent.Builder(this).performFade()
             }
-            explode -> {
-                AnimIntent.Builder(this).performExplode()
+            HyperSpace -> {
+                AnimIntent.Builder(this).performHyperSpace()
             }
         }
     }
